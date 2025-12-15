@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Windows.Forms;
@@ -87,6 +87,7 @@ namespace RobloxShaderPatch
                     Console.WriteLine("\n");
 
                     Console.WriteLine("Successfully patched Roblox for shaders!");
+                    Console.ReadKey(true);
                 } else if (ClientVersion == "m")
                 {
                     Console.WriteLine("Patching depth of field...");
@@ -102,7 +103,7 @@ namespace RobloxShaderPatch
                     Console.WriteLine("\n");
 
                     Console.WriteLine("Successfully patched Roblox for shaders!");
-
+                    Console.ReadKey(true);
                 }
             } else if (choice == "2")
             {
@@ -124,6 +125,7 @@ namespace RobloxShaderPatch
                     Console.WriteLine("\n");
 
                     Console.WriteLine("Successfully unpatched Roblox!");
+                    Console.ReadKey(true);
                 }
                 else if (ClientVersion == "m")
                 {
@@ -140,7 +142,7 @@ namespace RobloxShaderPatch
                     Console.WriteLine("\n");
 
                     Console.WriteLine("Successfully unpatched Roblox!");
-
+                    Console.ReadKey(true);
                 }
             }
         }
