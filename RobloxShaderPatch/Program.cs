@@ -129,13 +129,13 @@ namespace RobloxShaderPatch
                 }
                 else if (ClientVersion == "m")
                 {
-                    Console.WriteLine("Patching depth of field...");
+                    Console.WriteLine("Unpatching depth of field...");
                     patcher.WriteHexAtOffset(FilePath, offsets.M2007.DOF, "00");
                     Console.WriteLine("Done!");
 
                     Console.WriteLine("\n");
 
-                    Console.WriteLine("Patching bloom...");
+                    Console.WriteLine("Unpatching bloom...");
                     patcher.WriteHexAtOffset(FilePath, offsets.M2007.BLOOM, "00");
                     Console.WriteLine("Done!");
 
